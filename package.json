@@ -2,11 +2,8 @@
   "name": "article-preview-component-project",
   "version": "1.0.0",
   "description": "![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
   "scripts": {
-    "start": "live-server --port=3000",
-    "test": "echo \"No tests specified\" && exit 1",
-    "build": "echo \"No build step required\" && exit 1"
+    "start": "live-server --port=3000"
   },
   "author": "Pattaraporn Tulathum",
   "license": "ISC",

@@ -3,40 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="src/styles.css" />
+    <script defer src="src/scripts.js"></script>
     <title>Frontend Mentor | Article preview component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
-  <body>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+  <body id="root">
+    <div class="card-container">
+      <img src="./images/drawers.jpg" alt="Drawers" class="card-image" />
+      <div class="card-content">
+        <div class="card-title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </div>
+        <div class="card-description">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare. Here are some tips to help you make any room feel
+          complete.
+        </div>
+        <div class="card-footer">
+          <div class="card-author">
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt="Michelle"
+              class="author-image"
+            />
+            <div class="author-info">
+              <div class="author-name">Michelle Appleton</div>
+              <div class="author-date">28 Jun 2020</div>
+            </div>
+          </div>
+          <div class="card-share">
+            <button id="share-button">
+              <img
+                src="./images/icon-share.svg"
+                alt="Share"
+                class="share-icon"
+              />
+            </button>
+            <div class="share-dropdown">
+              <button class="share-dropdown-item">
+                <img
+                  src="./images/icon-facebook.svg"
+                  alt="Facebook"
+                  class="share-dropdown-icon"
+                />
+              </button>
+              <button class="share-dropdown-item">
+                <img
+                  src="./images/icon-twitter.svg"
+                  alt="Twitter"
+                  class="share-dropdown-icon"
+                />
+              </button>
+              <button class="share-dropdown-item">
+                <img
+                  src="./images/icon-pinterest.svg"
+                  alt="Pinterest"
+                  class="share-dropdown-icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
