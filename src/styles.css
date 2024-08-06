@@ -61,3 +61,50 @@
     line-height: 1.2rem;
     margin: 1rem 0;
 }
+
+.card_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.card_author {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 1rem 0; */
+    width: 7rem;
+    margin-right: 1.5rem;
+}
+
+.author_image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.author_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-right: 3rem;
+    width: 100%;
+}
+
+.author_name {
+    color: var(--very-dark-grayish-blue);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.author_date {
+    color: var(--grayish-blue);
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: 0.2rem;
+}
