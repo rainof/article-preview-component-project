@@ -44,7 +44,7 @@
     background-color: hsl(210, 46, 95);
     border-radius: 0.5rem;
     box-shadow: none;
-    transform: translateY(-1.8rem);
+    transform: translateY(-10vw);
 }
 
 .card_title {
