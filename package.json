@@ -5,14 +5,16 @@
   "homepage": "https://rainof.github.io/article-preview-component-project",
   "scripts": {
     "start": "live-server --port=3000",
+    "build": "parcel build index.html --dist-dir dist",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Pattaraporn Tulathum",
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^6.1.1",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "parcel": "^2.12.0"
   },
   "browserslist": {
     "production": [
