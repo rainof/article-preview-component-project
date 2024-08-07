@@ -2,12 +2,16 @@
   "name": "article-preview-component-project",
   "version": "1.0.0",
   "description": "![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)",
+  "homepage": "https://rainof.github.io/article-preview-component-project",
   "scripts": {
-    "start": "live-server --port=3000"
+    "start": "live-server --port=3000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Pattaraporn Tulathum",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "live-server": "^1.2.1"
   },
   "browserslist": {
