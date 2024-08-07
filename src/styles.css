@@ -6,7 +6,7 @@
     --white: hsl(0, 0%, 100%);
 }
 
-#root {
+body {
     background-color: var(--light-grayish-blue);
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@
     font-family: "Manrope", sans-serif;
 }
 
-.card_container {
+/* .card_container {
     display: flex;
     position: relative;
     border-radius: 15px;
@@ -191,4 +191,182 @@
     width: 4.5vw;
     height: auto;
     filter: invert(1) brightness(100) saturate(100%) hue-rotate(0deg);
+} */
+
+@media (min-width: 1024px) {
+    .card_container {
+        display: flex;
+        position: relative;
+        border-radius: 15px;
+        background-color: var(--white);
+        width: 76vw;
+        height: auto;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main_card {
+        display: flex;
+    }
+
+    .card_image {
+        width: auto;
+        height: 30vw;
+        /* height: 70%; */
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+        object-position: center;
+        clip-path: inset(0 18.5% 0 0);
+        filter: drop-shadow(0 4px 6px rgba(255, 255, 255, 0.9)) brightness(1.1) contrast(0.9);
+    }
+
+    .card_content {
+        background-color: hsl(210, 46, 95);
+        border-radius: 0.5rem;
+        box-shadow: none;
+        transform: translateX(-3.5vw);
+    }
+
+    .card_title {
+        color: var(--very-dark-grayish-blue);
+        font-size: 2.15vw;
+        font-weight: 700;
+        margin-top: 3.6vw;
+    }
+
+    .card_description {
+        color: var(--grayish-blue);
+        font-size: 1.4vw;
+        font-weight: 400;
+        margin-top: 1.2vw;
+    }
+
+    .card_footer {
+        display: flex;
+        align-items: center;
+        margin-top: 2.5vw;
+    }
+
+    .card_author {
+        display: flex;
+        align-items: center;
+        margin-right: 2vw;
+    }
+
+    .author_image {
+        width: 4.2vw;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .author_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+    }
+
+    .author_name {
+        color: var(--very-dark-grayish-blue);
+        font-size: 1.4vw;
+        font-weight: 700;
+    }
+
+    .author_date {
+        color: var(--grayish-blue);
+        font-size: 1.4vw;
+        font-weight: 400;
+        margin-top: 0.2vw;
+    }
+
+    #share_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 3.2vw;
+        height: 3.2vw;
+        border-style: none;
+        border-radius: 50%;
+        background-color: var(--light-grayish-blue);
+        cursor: pointer;
+    }
+
+    .share_icon {
+        width: 1.6vw;
+        height: auto;
+        fill: var(--very-dark-grayish-blue);
+    }
+
+    .floating_share {
+        display: none;
+        position: absolute;
+        background-color: var(--very-dark-grayish-blue);
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        transform: translateY(110vw);
+    }
+
+    /* .floating_container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 4.1vw 9.5vw;
+    } */
+
+    /* .mobile_share_name {
+        text-transform: uppercase;
+        color: var(--grayish-blue);
+        font-size: 3.6vw;
+        letter-spacing: 1vw;
+        margin-right: 3.5vw;
+    } */
+
+    /* .mobile_share_logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 15vw;
+        width: 100%;
+    } */
+
+    /* .icon_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none !important;
+        gap: 3vw;
+        padding: 0;
+        margin: 0
+    } */
+
+    /* .mobile_icon {
+        display: flex;
+        width: 100%;
+        margin: 0 1vw;
+    } */
+
+    /* #share_invert_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 9.5vw;
+        height: 9.5vw;
+        border-style: none;
+        border-radius: 50%;
+        background-color: var(--desaturated-dark-blue);
+        cursor: pointer;
+    } */
+
+    /* .share_invert_icon {
+        width: 4.5vw;
+        height: auto;
+        filter: invert(1) brightness(100) saturate(100%) hue-rotate(0deg);
+    } */
 }
