@@ -11,21 +11,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 100vh;
     font-family: "Manrope", sans-serif;
-    /* font-size: 13px; */
 }
 
 .card_container {
     display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
+    position: relative;
+    border-radius: 15px;
     background-color: var(--white);
     width: 90vw;
     height: auto;
     overflow: hidden;
     padding: 0;
-    margin: 2rem 0;
+    margin: 0;
+}
+
+.main_card {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .card_image {
@@ -40,47 +45,44 @@
 }
 
 .card_content {
-    padding: 0 2.1rem;
+    padding: 0 9.5vw;
     background-color: hsl(210, 46, 95);
     border-radius: 0.5rem;
     box-shadow: none;
-    transform: translateY(-10vw);
+    transform: translateY(-6vw);
 }
 
 .card_title {
     color: var(--very-dark-grayish-blue);
-    font-size: 1.05rem;
+    font-size: 4.5vw;
     font-weight: 700;
 }
 
 .card_description {
     color: var(--grayish-blue);
-    font-size: 0.86rem;
+    font-size: 3.6vw;
     font-weight: 400;
     margin-top: 0.5rem;
-    line-height: 1.2rem;
+    /* line-height: 1.2rem; */
     margin: 1rem 0;
 }
 
 .card_footer {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    /* width: 100%; */
+    margin-top: 12vw;
 }
 
 .card_author {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    /* margin: 1rem 0; */
-    width: 7rem;
-    margin-right: 1.5rem;
+    /* width: 7rem; */
+    margin-right: 4.5vw;
 }
 
 .author_image {
-    width: 100%;
+    width: 11vw;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
@@ -92,19 +94,87 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin-right: 3rem;
+    /* margin-right: 1.5rem; */
     width: 100%;
 }
 
 .author_name {
     color: var(--very-dark-grayish-blue);
-    font-size: 0.8rem;
+    font-size: 3.6vw;
     font-weight: 700;
 }
 
 .author_date {
     color: var(--grayish-blue);
-    font-size: 0.7rem;
+    font-size: 3.6vw;
     font-weight: 400;
-    margin-top: 0.2rem;
+    margin-top: 1vw;
 }
+
+#share_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 9.5vw;
+    height: 9.5vw;
+    border-style: none;
+    border-radius: 50%;
+    background-color: var(--light-grayish-blue);
+    cursor: pointer;
+}
+
+.share_icon {
+    width: 4.5vw;
+    height: auto;
+    fill: var(--very-dark-grayish-blue);
+}
+
+.floating_share {
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: start; */
+    position: absolute;
+    background-color: var(--very-dark-grayish-blue);
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+.share_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* padding: 1rem 2rem; */
+}
+
+
+
+/* .mobile_share_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    background-color: var(--very-dark-grayish-blue);
+    z-index: 1;
+}
+
+.mobile_share_name {
+    text-transform: uppercase;
+    color: var(--light-grayish-blue);
+    padding: 2rem;
+}
+
+.mobile_share_logo {
+    list-style-type: none;
+}
+
+.mobile_icon {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-left: 1rem;
+} */
