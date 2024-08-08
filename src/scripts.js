@@ -1,3 +1,12 @@
+import './styles.css';
+
+import drawerImage from './images/drawers.jpg';
+import avatarImage from './images/avatar-michelle.jpg';
+import shareIcon from './images/icon-share.svg';
+import facebookIcon from './images/icon-facebook.svg';
+import twitterIcon from './images/icon-twitter.svg';
+import pinterestIcon from './images/icon-pinterest.svg';
+
 document.addEventListener('DOMContentLoaded', () => {
     const showButton = document.getElementById('share_button');
     const hideMobileButton = document.getElementById('share_invert_button');
