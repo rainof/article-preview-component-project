@@ -16,7 +16,17 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <script src="src/scripts.js"></script>
+    <script defer src="src/scripts.js"></script>
+    <script>
+      const isLocalhost =
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1";
+      if (!isLocalhost) {
+        document.write(
+          '<base href="https://rainof.github.io/article-preview-component-project/">'
+        );
+      }
+    </script>
     <title>Frontend Mentor | Article preview component</title>
     <style>
       .floating_share {
